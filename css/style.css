@@ -9,11 +9,49 @@
     list-style: none;
 }
 
+
+
+
 .contener {
     width: 100%;
     height: 100vh;
 }
 
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.main-logo {
+  width: 100px; 
+  cursor: pointer;
+}
+
+.div {
+  display: none; /* divni korsatmay turadi */
+  position: absolute; /*div paydo bolganda sayt buzulib ketmaydi */
+  top: 110%; 
+  left: 30px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  white-space: nowrap; /* rasmlarni yonmayon  qlad */
+}
+
+
+.div img {
+  width: 100px; 
+  height: 100px;
+  margin-right: 5px;
+  object-fit: cover; /*rasm buzulib ketmasligi uchunn */
+  border-radius: 4px;
+}
+
+
+.logo-container:hover .div{
+  display: block; /*sichqoncha borganda divni korsatadi */
+}
 .forst {
     background-image: url("../img/1c7374919fa419ec2abcb24a9fc1024787f16aaa.jpg");
     height: 100vh;
